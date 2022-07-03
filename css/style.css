@@ -1,0 +1,356 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #222831;
+}
+.main{
+  margin: 0 auto;
+  text-align: center;
+}
+header{
+
+  height: 70px;
+  margin-top: 15px;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+}
+.head{
+  padding: 0 10rem;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #EEEEEE;
+  box-sizing: border-box;
+}
+nav div{
+  margin-right: 90px;
+}
+nav div:nth-last-child(1){
+  margin-right: 0;
+}
+.nav-logo{
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+}
+.nav-middle ul{
+  display: flex;
+  justify-content: center;
+}
+
+.nav-middle ul li{
+  margin-right: 2rem;
+  list-style: none;
+  font-size: 18px;
+  font-family: "Slabo 27px", serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.nav-middle ul li:hover{
+  color: #B4871D;
+}
+.nav-right img{
+  position: relative;
+  height: 24px;
+  width: 24px;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav-right img:hover{
+  transform: translateY(-5px);
+}
+.nav-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------main hero section--------------------------------------------- */
+
+.hero-section img{
+  height: 500px;
+  width: 100%;
+}
+.hero-text{
+  position: absolute;
+  top: 151px;
+  margin-left: 0px;
+  margin-right: 300px;
+}
+.text{
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section .hero-text h1{
+  color: #EEEEEE;
+  font-family: "Slabo 27px", serif;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  font-weight: 200;
+  margin: 30px 0;
+}
+.hero-text button{
+  background-color: #FFD369;
+  font-size: 3.5rem;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 0px;
+}
+.hero-text button:hover{
+  transform: translateY(-8px);
+}
+
+/* ----------------------------slider section ------------------------------------*/
+
+.main-body{
+  padding: 0 10rem;
+  text-align: center;
+}
+.slider-name{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+hr{
+  border-color : #FFD369;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.slider-name hr{
+  width: 605px;
+}
+.slider-name p{
+  color: #EEEEEE;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  margin-right: 20px;
+}
+.slider-name button{
+  background-color: #FFD369;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.slider-name button:hover{
+  background-color: #B4871D;
+}
+.slider{
+  display: flex;
+  justify-content: center;
+}
+.slider-outer{
+  width: 934px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px #EEEEEE;
+}
+.slider-photos{
+  position: relative;
+  width: 5604px;
+  animation: slider 25s infinite linear
+}
+.slider-photos img{
+  float: left;
+}
+
+@keyframes slider {
+  0%{
+    left: 0px;
+  }
+  16%{
+    left: 0px;
+  }
+  20%{
+    left: -934px;
+  }
+  36%{
+    left: -934px;
+  }
+  40%{
+    left: -1868px;
+  }
+  56%{
+    left: -1868px;
+  }
+  60%{
+    left: -2802px;
+  }
+  76%{
+    left: -2802px;
+  }
+  80%{
+    left: -3736px;
+  }
+  96%{
+    left: -3736px;
+  }
+  100%{
+    left: -4670px;
+  }
+}
+
+/* ----------------------------------seller section------------------------------------- */
+
+.seller{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.seller p{
+  width: 300px;
+  color: #EEEEEE;
+  font-size: 1.3rem;
+}
+.seller div{
+  transition: 0.5s;
+  cursor: pointer;
+  margin-right: 17px;
+}
+.seller div:nth-last-of-type(1){
+  margin-right: 0;
+}
+.seller div:hover{
+  transform: translateY(-10px);
+
+}
+.main-seller{
+  display: flex;
+  justify-content: center;
+}
+/* -----------------------------------discount section ------------------------------------------*/
+.c-p{
+  text-align: center;
+}
+.couple-photo{
+  box-shadow: 1px 1px 5px #EEEEEE;
+}
+
+
+/*---------------------------------------------men-women---------------------------------------------*/
+.m-w{
+  display: flex;
+  justify-content: center;
+}
+.men-women{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+.men-women p{
+  color: #EEEEEE;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.men-women hr{
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.men-women img{
+  transition: 0.5s;
+  cursor: pointer;
+}
+.men-women img:hover{
+  transform: translateY(-10px);
+}
+.men{
+  margin-right: 17px;
+}
+/*----------------------------------------our categories ---------------------------------------*/
+.cat{
+  display: flex;
+  justify-content: center;
+}
+.our-categories{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-categories p{
+  color: #EEEEEE;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.our-categories div{
+  transition: 0.5s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.our-categories div:nth-last-of-type(1){
+  margin-right: 0;
+}
+.our-categories div img{
+  width: 225px;
+}
+.our-categories div:nth-last-of-type(1){
+  margin-right: 0;
+}
+.our-categories div:hover{
+  transform: translateY(-10px);
+}
+/*  ----------------------------------------------footer ----------------------------------------------*/
+.foot{
+  display: flex;
+  justify-content: center;
+}
+.foot img{
+  margin-top: 20px;
+  margin-left: 10rem;
+}
+.div-footer{
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer{
+  background-color: #EEEEEE;
+  margin-top: 70px;
+}
+
+.div-footer div{
+  margin-top: 20px;
+  color: #222831;
+  margin-right: 50px;
+}
+.div-footer div:nth-last-of-type(1){
+  margin-right: 0;
+}
+.div-footer div p{
+  cursor: pointer;
+}
+.div-footer div p:hover{
+  color: #B4871D
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social img{
+  margin-left: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social img:hover{
+  transform: translateY(-5px);
+}
